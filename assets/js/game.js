@@ -55,6 +55,7 @@ if(
    (box3=="x" && box5=="x" && box7=="x")||(box1=="x" && box4=="x" && box7=="x")||
    (box2=="x" && box5=="x" && box8=="x")||(box3=="x" && box6=="x" && box9=="x")){
   document.querySelector(".turn-one").innerHTML="x won"
+  document.querySelector(".turn").innerHTML=""
   gameon=false;
 }
 // check o player
@@ -64,11 +65,13 @@ else if(
 (box3=="o" && box5=="o" && box7=="o")||(box1=="o" && box4=="o" && box7=="o")||
 (box2=="o" && box5=="o" && box8=="o")||(box3=="o" && box6=="o" && box9=="o")){
   document.querySelector(".turn-one").innerHTML="o won"
+  document.querySelector(".turn").innerHTML=""
   gameon=false;
 //match draw
 }else if(
   (box1 != "" && box2 != "" && box3 !=""&& box4 !="" && 
   box5 !=""&& box6!=""&& box7 !=""&& box8!=""&& box9!="" )){
   document.querySelector(".turn-one").innerHTML="match draw"
+  document.querySelector(".turn").innerHTML=""
 }
 }
