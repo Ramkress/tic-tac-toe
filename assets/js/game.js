@@ -19,16 +19,16 @@ function tapfun(item){
 }
 //reset the game
  function restart(){
-  let elem=document.querySelectorAll(".x")
-  let el=document.querySelectorAll(".o")
-  let del=document.querySelectorAll(".rounded")
-  elem.forEach(function(reset){  //function for remove the class "x" 
+  let removex=document.querySelectorAll(".x")
+  let removeo=document.querySelectorAll(".o")
+  let emptyval=document.querySelectorAll(".rounded")
+  removex.forEach(function(reset){  //function for remove the class "x" 
     reset.classList.remove("x")
   })
-  el.forEach(function(reset){  //function for remove the class "o"
+  removeo.forEach(function(reset){  //function for remove the class "o"
     reset.classList.remove("o")
   })
-  del.forEach(function(reset){ //remove innerhtml for all boxes
+  emptyval.forEach(function(reset){ //remove innerhtml for all boxes
     reset.innerHTML="";
   })
   document.querySelector(".turn-one").innerHTML="" //remove the innerhtml in won div
