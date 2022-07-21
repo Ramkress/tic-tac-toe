@@ -1,7 +1,8 @@
 //append x and o
 let startgame = 1; //default value
 let gameon=true; //default boolean
-function tapfun(item){    
+function tapfun(item){   
+  console.log(item) 
   if(startgame == 1 && gameon == true){ //condition if value 1 and boolean true
    item.classList.add("x") //add class "x"
    item.innerHTML="x";    //add text "x"
