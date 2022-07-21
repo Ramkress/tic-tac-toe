@@ -6,6 +6,7 @@
 .col-back-c {
     height: 110px;
     background-color: rgba(28, 12, 12, 0.802);
+    
 }
 
 .bg-img {
@@ -87,15 +88,15 @@
 @keyframes flip {
 	0% {
 		transform: perspective(400px) rotateY(0);
-		animation-timing-function: ease-out;
+		animation-timing-function: ease-in-out;
 	}
 	40% {
 		transform: perspective(400px) translateZ(150px) rotateY(170deg);
-		animation-timing-function: ease-out;
+		animation-timing-function: ease-in-out;
 	}
 	50% {
 		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-		animation-timing-function: ease-in;
+		animation-timing-function: ease-out;
 	}
 	80% {
 		transform: perspective(400px) rotateY(360deg) scale(.95);
@@ -103,6 +104,6 @@
 	}
 	100% {
 		transform: perspective(400px) scale(1);
-		animation-timing-function: ease-in;
+		animation-timing-function: ease;
 	}
 }
